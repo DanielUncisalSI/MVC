@@ -14,8 +14,8 @@ object frmPrincipal: TfrmPrincipal
   PixelsPerInch = 96
   TextHeight = 13
   object Button1: TButton
-    Left = 152
-    Top = 112
+    Left = 16
+    Top = 24
     Width = 75
     Height = 25
     Caption = 'Button1'

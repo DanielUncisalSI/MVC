@@ -1,0 +1,33 @@
+unit uSistemaControl;
+
+interface
+
+uses
+  uConexao;
+type
+  TSistemaControl = class
+  //aqui são os atributos privados da classe
+    private
+      Fconexao: Tconexao;
+      class var FInstance: TSistemaControl;//variavel de classe
+
+    public
+      // aqui é uma função de classe
+      class function GetInstance: TSistemaControl;
+
+  end;
+
+implementation
+
+{ TSistemaControl }
+
+class function TSistemaControl.GetInstance: TSistemaControl;
+begin
+  if not Assigned(self.FInstance) then
+    begin
+      self.FInstance := TSistemaControl.Create;
+    end;
+    Result := self.FInstance
+end;
+
+end.

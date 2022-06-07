@@ -26,7 +26,7 @@ implementation
 
 {$R *.dfm}
 
-uses uConexao;
+uses uConexao, uSistemaControl;
 
 procedure TfrmPrincipal.Button1Click(Sender: TObject);
 var
